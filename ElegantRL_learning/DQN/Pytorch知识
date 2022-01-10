@@ -1,0 +1,10 @@
+我们在定义自己的网络的时候需要继承nn.Module类，并重新实现构造函数__init__和forward两个方法
+有一些需要注意的技巧
+（1）我们可以把网络中具有可学习的参数的层（如全连接层/卷积层）放在__init__()中
+（2）一般把不具有可学习参数的层（如ReLU/dropout/BatchNormanation层）放在构造函数中，也可不放在构造函数中，则在forward中用nn.functional代替
+（3）forward方法必须要重写，它是实现模型的功能，实现各个层之间连接关系的核心
+
+torch.nn.Module类的多种实现
+1）通过Sequential来包装层，即将几个层包装在一起作为一个大的层（块）
+ 详情查看文件nn-Module学习
+2）

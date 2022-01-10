@@ -1,0 +1,96 @@
+文件名:1_high_un
+        数据：unbalance_high_flow
+        状态5维
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 1
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.1
+        无判别机制
+文件名:2_high_un
+        数据：unbalance_high_flow
+        状态5维
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 1
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.08
+        无判别机制
+ 文件名:3_high_un
+        数据：unbalance_high_flow
+        状态5维
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 1
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.05
+        无判别机制
+文件名:4_high_un
+            数据：unbalance_high_flow
+            奖励设置：-per_waiting_time
+            奖励参数调整：c =1
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.05
+            未增加判断机制
+            文件名:5_high_un
+            数据：unbalance_high_flow
+            奖励设置：-per_waiting_time
+            奖励参数调整：c =1
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加判断机制
+            文件名:6_high_un
+            数据：unbalance_high_flow
+            奖励设置：-per_waiting_time
+            奖励参数调整：c =1
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加判断机制
+            文件名:7_low_un        
+                数据：./unbalance_net/low_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.5
+                未增加k机制
+                文件名:8_low        
+                数据：./balance_net/low_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.5
+                未增加k机制
+  #重新做 unbalance balance high low 四个  9开始
+                文件名:9_low_un        
+                数据：./unbalance_net/low_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+                文件名:10_low        
+                数据：./balance_net/low_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+                文件名:11_high        
+                数据：./balance_net/high_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+                文件名:12_high_un        
+                数据：./unbalance_net/high_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+                文件名:13_high        
+                数据：./balance_net/high_net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0.4 c2=1
+                参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.1
+                未增加k机制
+                

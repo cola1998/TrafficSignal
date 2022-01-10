@@ -1,0 +1,235 @@
+文件名:0_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.1
+        未增加k机制
+
+文件名:1_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.1
+        未增加k机制
+
+文件名:2_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.08
+        未增加k机制
+
+文件名:3_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.05
+        未增加k机制
+
+文件名:4_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.05
+        未增加k机制
+        sumo中改变了仿真步长为1
+文件名:5_high_un_base
+        数据：unbalance_high_flow
+        奖励设置：-per_waiting_time
+        奖励参数调整：c = 0.5
+        参数设置:1) 探索率 0.5 固定值
+        2) 学习率 0.05
+        未增加k机制
+
+
+        文件名:6_high_un_base
+            数据：../DQN/unbalance_net/high_net.sumocfg
+            奖励设置：-per_waiting_time
+            奖励参数调整：c =0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+文件名:7_high_un_base
+            数据：../DQN/unbalance_net/high_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=5e-05 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:8_high_un_base
+            数据：../DQN/unbalance_net/high_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.8
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+  文件名:9_high_un_base
+            数据：../DQN/unbalance_net/high_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.3
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+
+            文件名:10_high_un_base
+            数据：../DQN/unbalance_net/high_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=1
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+  11开始是对照实验  high - balance unbalance
+  low - balance unbalance文件名:11_high_base
+            数据：../DQN/balance_net/high_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:12_low_base
+            数据：../DQN/balance_net/low_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:13_low_un_base
+            数据：../DQN/unbalance_net/low_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:14_low_un_base
+            数据：../DQN/unbalance_net/low_net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:15_high_un_多
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制文件名:15_high_un_多
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:15_high_un_多
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:16_high_un_多_e
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:17_high_un_多_e
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            文件名:18_high_un_test
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+
+  文件名:19_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率
+            2) 学习率 0.01
+            未增加k机制
+  文件名:20_high_un_adam
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率
+            2) 学习率 0.01
+            未增加k机制
+            optimizer 修改为Adam
+  文件名:21_high_un_adam
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率
+            2) 学习率 0.01
+            未增加k机制
+            optimizer 修改为Adam
+            查看perloss的变化
+  文件名:22_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 改变
+            2) 学习率 0.01
+            未增加k机制
+            optimizer RMSprop
+            查看perloss的变化
+  文件名:23_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            optimizer RMSprop
+            查看perloss的变化
+  文件名:24_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 固定值
+            2) 学习率 0.01
+            未增加k机制
+            optimizer Adam
+            查看perloss的变化
+  文件名:25_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 动态改变
+            2) 学习率 0.01
+            未增加k机制
+            optimizer Adam
+            查看perloss的变化
+  文件名:26_high_un
+            数据：../DQN/unbalance_net/net.sumocfg
+            奖励设置：-c1*delay_time - c2*per_waiting_time
+            奖励参数调整：c1=0 c2=0.5
+            参数设置:1) 探索率 0.5 动态改变
+            2) 学习率 0.005
+            未增加k机制
+            optimizer Adam
+            查看perloss的变化
+            文件名:27_high_un
+                数据：../DQN/unbalance_net/net.sumocfg
+                奖励设置：-c1*delay_time - c2*per_waiting_time
+                奖励参数调整：c1=0 c2=0.5
+                参数设置:1) 探索率 0.5 动态改变
+                2) 学习率 0.005
+                未增加k机制
+                optimizer Adam
+                查看perloss的变化
+                转弯比6

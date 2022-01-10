@@ -1,0 +1,36 @@
+过程伪代码
+初始化各种参数
+1. 车辆方面
+确定车辆数量 low/mid/high
+确定车辆转向比
+每次仿真动态生成车流数据吧  generate_routefile()函数
+2. max_episode
+max_step
+learning_rate = 0.01 学习率
+gamma = 0.99  折扣因子
+e_greedy = 1 - t/max_step可以动态改变
+yellow_time = 3s
+green_time = 30s
+phase_id_list =
+free_speed =
+C = 100 每100轮更新一次target_net
+
+for episode in range(max_episode):
+    st = initial_state()
+    for t in range(max_step):
+        rt = cal_reward()
+        at = agent.choose_action(st,rt)
+        agent.take_action(at)
+        st' = get_state()
+        存储(st,at,rt,st')
+        采样更新网络 agent.train()
+        if t%C == 0:
+            target_net.train()
+
+智能体功能：
+获取环境状态
+
+
+计算奖励
+选择动作
+训练参数

@@ -1,0 +1,622 @@
+文件名:0_调试
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=0.5
+        参数设置:1) 探索率 0.5 动态改变
+                2) 学习率 0.01
+                未增加k机制
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0.4 c2=1
+        参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+    文件名:1_测试        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=0.5
+        参数设置:1) 探索率 0.5 动态改变
+                2) 学习率 0.01
+                未增加k机制
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0.4 c2=1
+        参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+    文件名:2_测试        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=0.5
+        参数设置:1) 探索率 0.5 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0.4 c2=1
+        参数设置:1) 探索率 0.5 固定值
+                2) 学习率 0.01
+                未增加k机制
+    文件名:3_测试        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 固定值
+                2) 学习率 0.01
+                未增加k机制
+    调整了一下epsilon=0.05 以及biud3qn 的c2设置为了1 就是全使用上
+文件名:4_测试_delay_time        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 固定值
+                2) 学习率 0.01
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+    文件名:5_测试        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 固定值
+                2) 学习率 0.01
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        修正reward dqn的
+
+    文件名:6_测试_全部跑完        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 固定值
+                2) 学习率 0.01
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        修正reward dqn的
+    文件名:7_测试        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.05 固定值
+                2) 学习率 0.01
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        green time 改为10
+文件名:8_测试
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.01
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.01
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        green time 改为10
+    文件名:9_测试学习率        
+    车流文件数据：../DQN/unbalance_net/net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+
+
+文件名:10_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        50轮同一数据集测试
+ 文件名:11_非动态车流文件
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        50轮同一数据集测试  修正了探索率max(0.99^n次方,0.05)
+        接下来 调整一下 gamma 和 alpha
+        以及加入delay_time的
+    文件名:12_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        50轮同一数据集测试
+    文件名:13_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        50轮同一数据集测试
+    文件名:14_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 6
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0.5 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                无识别车流
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=0.5 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        50轮同一数据集测试
+    文件名:15_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+文件名:17_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:18_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:19_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:19_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:19_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:20_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+    文件名:21_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:22_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:23_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+文件名:24_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:25_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.05
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.05
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:26_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.001 调整了学习率！！
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.001
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:27_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.001 调整了学习率！！
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim  增大了经验缓冲池大小！
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.001
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:28_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.001 调整了学习率！！
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim  增大了经验缓冲池大小！
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.001
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    文件名:29_非动态车流文件        
+    车流文件数据：../DQN/unbalance_net/high_net.sumocfg 
+    转弯比 5
+        1、BIU_D3QN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 动态改变
+                2) 学习率 0.001 调整了学习率！！
+                
+                优化器：optimizer Adam
+        改变状态 turing_rate 变为 turning_number
+        要求全部跑完 限制相同动作不能重复3次以上
+        mid_dim = 3 * input_dim  增大了经验缓冲池大小！
+            
+        2、DQN
+        奖励设置：-c1*delay_time - c2*per_waiting_time
+        奖励参数调整：c1=1 c2=1
+        参数设置:1) 探索率 0.1 固定值
+                2) 学习率 0.001
+                未增加k机制
+        delay_time 修正为 1-(当前速度/max_speed) 测试
+        左转：直行：右转 = 5：3: 2
+        修正dqn的reward 
+    

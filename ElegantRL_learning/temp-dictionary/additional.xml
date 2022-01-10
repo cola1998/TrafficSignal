@@ -1,0 +1,64 @@
+<!--
+traffic light 可以在 netedit 中设置，也可以通过 additional file 的形式加入到仿真中。
+考虑如下的交通路口场景 0，1 ，2，3
+-->
+<!-- 基础版 -->
+<additional>
+    <tlLogic id="0" type="static" programID="0" offset="0">
+        <phase duration="31" state="GrGr"/>
+        <phase duration="6" state="yryr"/>
+        <phase duration="31" state="rGrG"/>
+        <phase duration="6" state="ryry"/>
+    </tlLogic>
+</additional>
+<!--
+    参数解释：
+    tlLogic行  id和type是与traffic_light 和 type对应
+    type分成三种：
+        static：fixed phase durations 固定相位周期
+        actuated：phase prolongation based on time gaps between vehicles 根据车辆之间的时间间隔的延长相位时间
+
+        delay_based：on accumulated time loss of queued vehicles   根据排队车辆累计等待时间
+
+    programID为该红绿灯转换机制id 一个traffic light有多个program，以最后的program为准。
+            若要修改某个net.xml中的转换机制，可以通过添加add.xml文件的方式用新的program覆盖之前的program。
+    phase中各条lane的index是从12点钟方向edge的右转lane开始，顺时针方向，依次经过中间lane，左转lane，然后到下一个edge，依次编号。
+
+-->
+
+<!-- actuated版 -->
+<!--<additional>-->
+<!--    <tlLogic id="0" programID="my_program" offset="0" type="actuated">-->
+<!--        <param key="max-gap" value="3.0"/>-->
+<!--        <param key="detector" value="2.0"/>-->
+<!--        <param key="show-detectors" value="false"/>-->
+<!--        <param key="file" value="NULL"/>-->
+<!--        <param key="freq" value="300"/>-->
+
+<!--        <phase duration="31" minDur="5" maxDur="45" state="GGggrrrrGGggrrrr"></phase>-->
+<!--    </tlLogic>-->
+<!--</additional>-->
+<!--
+type为actuated类型的样例：
+phase tag要设置minDur和maxDur
+如果只有 duration 或者 minDur==maxDur，则还是固定时长的 phase.
+max-gap 两车之间最大的时间间隔，单位s
+detector-gap:从detector到stop line的时间间隔，以该lane的最大速度计算。
+-->
+
+<!-- delay_based版 -->
+<!--<additional>-->
+<!--    <tlLogic id="0" programID="my_program" offset="0" type="delay_based">-->
+<!--        <param key="detectorRange" value="100"/>-->
+<!--        <param key="minTimeLoss" value="1"/>-->
+<!--        <param key="file" value="'NULL"/>-->
+<!--        <param key="freq" value="300"/>-->
+<!--        <param key="show-detectors" value="false"/>-->
+
+<!--        <phase duration="31" minDur="5" maxDur="45" state="GGggrrrrGGggrrrr"/>-->
+<!--    </tlLogic>-->
+<!--</additional>-->
+<!--
+detectorRange表示检测范围。如果车辆进入该范围，就计算其时间延迟1-v/v_max.
+minTimeLoss如果道路的时间延迟积累超过该数值，则增加下次绿灯时长.
+-->
